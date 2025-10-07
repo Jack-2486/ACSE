@@ -65,8 +65,8 @@ def main():
     # optimizer = optim.Adam(net.parameters(), lr=0.005)
     optimizer = torch.optim.AdamW(net.parameters(), lr=0.0001, weight_decay=0.001)
 
-    epochs = 50
-    save_path = './AlexNet.pth'  # 保存准确率最高的那次模型的路径
+    epochs = 2
+    save_path = './ACSE.pth'  # 保存准确率最高的那次模型的路径
     best_acc = 0.0  # 最佳准确率
     # train_steps = len(train_loader)
 
